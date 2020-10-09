@@ -1,0 +1,49 @@
+body.signIn-body{
+/*    background-image: url('../ASSET/senete%20building%20(2).jpg');*/
+/*    opacity: 0.1;*/
+/*
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background-color: darkslategray;
+}
+.container{
+    margin-top: 8%;
+}
+.card.sighin-card{
+    padding: 40px 0px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -webkit-box-shodow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -moz-box-shodow: 2px 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 80px 8px 40px 8px;
+    border-bottom: 5px solid #fff;
+   
+}
+img.img-signIn{
+    padding: 0 2rem 2rem;
+    float: left;
+    display: block;
+}
+form.form-signIn{
+    margin: auto;
+    max-width: 350px;
+}
+button.signIn-btn{
+    color: #ffffffff;
+    background-color: #d64829;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+.school-name{
+    text-align: left;
+    padding-top: 40px;
+    font-size: 2rem;
+}
+.name{
+    padding-bottom: 50px;
+    margin-bottom: 2rem;
+}
+.img{
+    float: right;
+}
