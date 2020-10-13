@@ -1,0 +1,36 @@
+body{
+	background-color: white;
+}
+nav{
+	background-color: green;
+}
+div.navbar-header{
+	background-color: green;
+}
+.side-nav {
+	background-color: green;
+	    z-index: -1;
+}
+a {
+	color: #f5f5f5;
+
+}
+.logo-space{
+padding-bottom: 80px;
+}
+ .navbar-nav>li>a{
+    	line-height: 40px;
+ }
+ 
+
+element.style{
+	padding-top: 80px;
+}
+
+@media (min-width: 768px)
+
+.navbar-nav>li>a{
+    padding-top: 15px;
+    padding-bottom: 60px;
+    }
+ 

@@ -1,0 +1,49 @@
+body{ 
+overflow-x: hidden;
+font-family: 'Lato', sans-serif;
+color: # 505962;
+}
+.offset{
+
+
+}
+.table .table-bordered{
+
+}
+.fo1{
+	width: 50%;
+	float: left;
+}
+.line-left{
+	width: 20%;
+	margin-left: 10em;
+	border: 1px solid black;
+	float: left;
+}
+.line{
+	width: 100%;
+}
+.line-right{
+	width: 20%;
+	margin-left: 10em;
+	border: 1px solid black;
+	float: right;
+
+}
+.boxed-left{
+	border: 2px solid black;
+	width: 11em;
+    float: left;
+    padding-left: 10px;
+    margin-left: 15em;
+    height: 5em;
+}
+.boxed-right{
+	border: 2px solid black;
+	width: 11em;
+	float: right;
+	padding-right: 10px;
+    margin-right: 15em;
+    height: 5em;
+}
+

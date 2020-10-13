@@ -1,0 +1,47 @@
+create database transcript;
+use transcript;
+create table departments (
+dept_id int(11) not null primary key auto_increment,
+dept_name varchar(255) not null,
+faculty varchar(255) default 'Physical Science' not null
+);
+create table levels(
+level_id int(11) not null primary key auto_increment,
+level int(3) not null
+);
+create table students (
+student_id int(11) not null primary key auto_increment,
+name varchar(255) not null,
+reg_no varchar(20) unique not null,
+gender boolean not null,
+date_of_birth date not null,
+current_level int(11) not null,
+foreign key (current_level) references levels(level_id),
+year_entered date not null,
+year_gratuated date null,
+class_of_degree varchar(255),
+current_department int(11) not null,
+foreign key (current_department) references departments(dept_id),
+faculty varchar(255) default 'Physical Science' not null,
+cgpa decimal(2,2)
+);
+create table courses (
+course_id int(11) not null primary key auto_increment,
+title varchar(255) not null,
+course_code varchar(10) not null,
+semester boolean not null,
+credit_unit int(1) not null,
+level_id int(11) not null,
+foreign key (level_id) references levels(level_id)
+);
+create table result (
+id int(11) not null primary key auto_increment,
+student_id int(11),
+foreign key (student_id) references students(student_id),
+course_id int(11),
+foreign key (course_id) references courses(course_id),
+level_id int(11),
+foreign key (level_id) references levels(level_id),
+marks int(2),
+remark varchar(10) not null
+);

@@ -1,0 +1,15 @@
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+select name,gender,current_level,mark, remark from `students` inner join result on students(student_id) = result(student_id);
+
+SELECT *
+FROM students
+INNER JOIN result ON students.student_id=result.student_id WHERE students.student_id = 1
+INNER JOIN result ON students.student_id=result.student_id WHERE 
+
+SELECT name,reg_no,date_of_birth,level,dept_name,marks,remark,course_code,credit_unit FROM students JOIN result ON students.student_id=result.student_id JOIN courses ON courses.course_id=result.course_id JOIN levels ON levels.level_id=students.current_level JOIN departments ON departments.dept_id=students.current_department WHERE students.student_id=1
+
+SELECT *
+    FROM courses JOIN students_courses ON courses.course_id=students_courses.course_id

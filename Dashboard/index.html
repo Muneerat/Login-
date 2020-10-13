@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Elisyam - Dashboard</title>
+    <meta
+      name="description"
+      content="Elisyam is a Web App and Admin Dashboard Template built with Bootstrap 4"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+<!--
+    <script type="cd21e38ad2e7f19e9060b801-text/javascript">
+      WebFont.load({
+        google: {"families":["Montserrat:400,500,600,700","Noto+Sans:400,700"]},
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+      });
+    </script>
+-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/css/base/elisyam-1.5.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/owl-carousel/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.min.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <body id="page-top">
+    <div id="preloader">
+      <div class="canvas">
+        <img src="assets/img/logo.png" alt="logo" class="loader-logo" />
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <div class="page">
+      <header class="header">
+        <nav class="navbar fixed-top">
+          <div class="search-box">
+            <button class="dismiss"><i class="ion-close-round"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input
+                type="search"
+                placeholder="Search something ..."
+                class="form-control"
+              />
+            </form>
+          </div>
+
+          <div
+            class="navbar-holder d-flex align-items-center align-middle justify-content-between"
+          >
+            <div class="navbar-header">
+              <a href="db-default.html" class="navbar-brand">
+                <div class="brand-image brand-big">
+                  <img
+                    src="assets/img/school_logo2.jpg"
+                    alt="logo"
+                    class="logo-big"
+                  />
+                </div>
+                <div class="brand-image brand-small">
+                  <img
+                    src="assets/img/logo.png"
+                    alt="logo"
+                    class="logo-small"
+                  />
+                </div>
+              </a>
+
+              <a id="toggle-btn" href="#" class="menu-btn active">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+
+            <ul
+              class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right"
+            >
+              <li class="nav-item d-flex align-items-center">
+                <a id="search" href="#"><i class="la la-search"></i></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="notifications"
+                  rel="nofollow"
+                  data-target="#"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link"
+                  ><i class="la la-bell animated infinite swing"></i
+                  ><span class="badge-pulse"></span
+                ></a>
+                <ul
+                  aria-labelledby="notifications"
+                  class="dropdown-menu notification"
+                >
+<!--
+                  <li>
+                    <div class="notifications-header">
+                      <div class="title">Notifications (4)</div>
+                      <div class="notifications-overlay"></div>
+                      <img
+                        src="assets/img/notifications/01.jpg"
+                        alt="..."
+                        class="img-fluid"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="message-icon">
+                        <i class="la la-user"></i>
+                      </div>
+                      <div class="message-body">
+                        <div class="message-body-heading">
+                    
+                        
+                  </li>
+-->
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="#"
+                      class="dropdown-item all-notifications text-center"
+                      >View All Notifications</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  id="user"
+                  rel="nofollow"
+                  data-target="#"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link"
+                  ><img
+                    src="assets/img/avatar/avatar-01.jpg"
+                    alt="..."
+                    class="avatar rounded-circle"
+                /></a>
+                <ul aria-labelledby="user" class="user-size dropdown-menu">
+                  <li class="welcome">
+                    <a href="#" class="edit-profil"
+                      ><i class="la la-gear"></i
+                    ></a>
+                    <img
+                      src="assets/img/avatar/avatar-01.jpg"
+                      alt="..."
+                      class="rounded-circle"
+                    />
+                  </li>
+
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="pages-login.html"
+                      class="dropdown-item logout text-center"
+                      ><i class="ti-power-off"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#off-canvas" class="open-sidebar"
+                  ><i class="la la-ellipsis-h"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="page-content d-flex align-items-stretch">
+        <div class="default-sidebar">
+          <nav class="side-navbar box-scroll sidebar-scroll">
+            <ul class="list-unstyled">
+              <li class="active">
+                <a
+                  href="#dropdown-db"
+                  aria-expanded="true"
+                  data-toggle="collapse"
+                  ><i class="la la-columns"></i><span>Dashboard</span></a
+                >
+<!--
+                <ul id="dropdown-db" class="collapse list-unstyled show pt-0">
+                  <li><a class="active" href="db-default.html">Default</a></li>
+                  <li><a href="db-clean.html">Clean</a></li>
+                  <li><a href="db-compact.html">Compact</a></li>
+                  <li><a href="db-modern.html">Modern</a></li>
+                  <li><a href="db-social.html">Social</a></li>
+                  <li><a href="db-smarthome.html">Smarthome</a></li>
+                  <li><a href="db-all.html">All</a></li>
+                </ul>
+-->
+<!--
+              </li>
+              <li>
+                <a
+                  href="#dropdown-app"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-puzzle-piece"></i
+                  ><span>Applications</span></a
+                >
+-->
+<!--
+                <ul id="dropdown-app" class="collapse list-unstyled pt-0">
+                  <li><a href="app-calendar.html">Calendar</a></li>
+                  <li><a href="app-chat.html">Chat</a></li>
+                  <li><a href="app-mail.html">Mail</a></li>
+                  <li><a href="app-contact.html">Contact</a></li>
+                </ul>
+-->
+              </li>
+<!--
+              <li>
+                <a href="components-widgets.html"
+                  ><i class="la la-spinner"></i><span>Widgets</span></a
+                >
+              </li>
+            </ul>
+            <span class="heading">Components</span>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#dropdown-ui"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-share-alt"></i><span>UI Elements</span></a
+                >
+-->
+<!--
+                <ul id="dropdown-ui" class="collapse list-unstyled pt-0">
+                  <li><a href="components-buttons.html">Buttons</a></li>
+                  <li><a href="components-alerts.html">Alerts</a></li>
+                  <li><a href="components-modal.html">Modal</a></li>
+                  <li><a href="components-notifications.html">Noty</a></li>
+                  <li><a href="components-timeline.html">Timeline</a></li>
+                  <li><a href="components-progress.html">Progress</a></li>
+                  <li><a href="components-tabs.html">Tabs</a></li>
+                  <li><a href="components-charts.html">Chart Js</a></li>
+                  <li><a href="components-accordion.html">Accordion</a></li>
+                  <li><a href="components-popover.html">Popover</a></li>
+                  <li><a href="components-tooltip.html">Tooltip</a></li>
+                  <li><a href="components-scrollable.html">Scrollable</a></li>
+                </ul>
+              </li>
+-->
+<!--
+              <li>
+                <a
+                  href="#dropdown-icons"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-font"></i><span>Icons</span></a
+                >
+                <ul id="dropdown-icons" class="collapse list-unstyled pt-0">
+                  <li><a href="icons-lineawesome.html">Line Awesome</a></li>
+                  <li><a href="icons-themify.html">Themify</a></li>
+                  <li><a href="icons-ionicons.html">Ionicons</a></li>
+                  <li><a href="icons-meteocons.html">Meteocons</a></li>
+                </ul>
+              </li>
+-->
+              <li>
+                <a
+                  href="upload.html"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-list-alt"></i><span>Forms</span></a
+                >
+<!--
+                <ul id="dropdown-forms" class="collapse list-unstyled pt-0">
+                  <li><a href="forms-basic.html">Form Basic</a></li>
+                  <li><a href="forms-validation.html">Form Validation</a></li>
+                  <li><a href="forms-wizard.html">Form Wizard</a></li>
+                  <li><a href="forms-select.html">Bootstrap Select</a></li>
+                </ul>
+-->
+              </li>
+              <li>
+                <a
+                  href="transcript.html"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-th-large"></i><span>Tables</span></a
+                >
+                <ul id="dropdown-tables" class="collapse list-unstyled pt-0">
+                  <li><a href="tables-basic.html">Basic</a></li>
+                  <li><a href="tables-datatables.html">Datatables</a></li>
+                  <li><a href="tables-tabledit.html">Tabledit</a></li>
+                </ul>
+              </li>
+<!--
+              <li>
+                <a href="maps-leaflet.html"
+                  ><i class="la la-map"></i><span>Maps</span></a
+                >
+              </li>
+-->
+            </ul>
+           
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#dropdown-authentication"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-user"></i><span>Authentication</span></a
+                >
+                <ul
+                  id="dropdown-authentication"
+                  class="collapse list-unstyled pt-0"
+                >
+                  <li><a href="pages-login.html">Login</a></li>
+                  <li><a href="pages-login-02.html">Login 02</a></li>
+                  <li><a href="pages-register.html">Register</a></li>
+                  <li>
+                    <a href="pages-forgot-password.html">Forgot Password</a>
+                  </li>
+                  <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                  <li>
+                    <a href="pages-mail-confirm.html">Mail Confirmation</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#dropdown-generic"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-file-text"></i><span>Generic</span></a
+                >
+                <ul id="dropdown-generic" class="collapse list-unstyled pt-0">
+                  <li><a href="pages-coming-soon.html">Coming Soon</a></li>
+                  <li><a href="pages-profile.html">Profile</a></li>
+                  <li><a href="pages-invoice.html">Invoice</a></li>
+                  <li><a href="pages-search.html">Search</a></li>
+                  <li><a href="pages-faq.html">FAQ</a></li>
+                  <li><a href="pages-blank.html">Blank</a></li>
+                </ul>
+              </li>
+<!--
+              <li>
+                <a
+                  href="#dropdown-social"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-comments"></i><span>Social</span></a
+                >
+                <ul id="dropdown-social" class="collapse list-unstyled pt-0">
+                  <li><a href="pages-newsfeed.html">Newsfeed</a></li>
+                  <li><a href="pages-about.html">About</a></li>
+                  <li><a href="pages-events.html">Events</a></li>
+                  <li><a href="pages-friends.html">Friends</a></li>
+                  <li><a href="pages-groups.html">Groups</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#dropdown-email"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-at"></i><span>Email</span></a
+                >
+                <ul id="dropdown-email" class="collapse list-unstyled pt-0">
+                  <li><a href="email-welcome.html">Welcome</a></li>
+                  <li><a href="email-password.html">Reset Password</a></li>
+                  <li><a href="email-order.html">Order Confirmation</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#dropdown-pricing"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-usd"></i><span>Pricing</span></a
+                >
+                <ul id="dropdown-pricing" class="collapse list-unstyled pt-0">
+                  <li><a href="pages-pricing-tables-01.html">Style 01</a></li>
+                  <li><a href="pages-pricing-tables-02.html">Style 02</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#dropdown-error"
+                  aria-expanded="false"
+                  data-toggle="collapse"
+                  ><i class="la la-exclamation-triangle"></i
+                  ><span>Errors</span></a
+                >
+                <ul id="dropdown-error" class="collapse list-unstyled pt-0">
+                  <li><a href="pages-404-01.html">Style 01</a></li>
+                  <li><a href="pages-404-02.html">Style 02</a></li>
+                </ul>
+              </li>
+-->
+            </ul>
+          </nav>
+        </div>
+
+        <div class="content-inner">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="page-header">
+                <div class="d-flex align-items-center">
+                  <h2 class="page-header-title">Dashboard</h2>
+<!--
+                  <div>
+                    <div class="page-header-tools">
+                      <a class="btn btn-gradient-01" href="#">Add Widget</a>
+                    </div>
+                  </div>
+-->
+                </div>
+              </div>
+            </div>
+
+            <div class="row flex-row">
+              <div class="col-xl-4 col-md-6 col-sm-6">
+                <div class="widget widget-12 has-shadow">
+                  <div class="widget-body">
+                    <div class="media">
+                      <div class="align-self-center ml-5 mr-5">
+                        <i class="ion-social-facebook text-facebook"></i>
+                      </div>
+                      <div class="media-body align-self-center">
+                        <div class="title text-facebook">David Green</div>
+                        <div class="number">10,865 Likes</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 col-sm-6">
+                <div class="widget widget-12 has-shadow">
+                  <div class="widget-body">
+                    <div class="media">
+                      <div class="align-self-center ml-5 mr-5">
+                        <i class="ion-social-twitter text-twitter"></i>
+                      </div>
+                      <div class="media-body align-self-center">
+                        <div class="title text-twitter">@David_Green</div>
+                        <div class="number">8,986 Followers</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 col-sm-6">
+                <div class="widget widget-12 has-shadow">
+                  <div class="widget-body">
+                    <div class="media">
+                      <div class="align-self-center ml-5 mr-5">
+                        <i
+                          class="ion-social-linkedin-outline text-linkedin"
+                        ></i>
+                      </div>
+                      <div class="media-body align-self-center">
+                        <div class="title text-linkedin">@David_Green</div>
+                        <div class="number">3,654 Followers</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row flex-row">
+              <div class="col-xl-12 col-md-6">
+                <div class="widget widget-09 has-shadow">
+                  <div class="widget-header d-flex align-items-center">
+                    <h2>Delivered Orders</h2>
+                    <div class="widget-options">
+                      <button type="button" class="btn btn-shadow">
+                        View all
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="widget-body">
+                    <div class="row">
+                      <div class="col-xl-10 col-12 no-padding">
+                        <div>
+                          <canvas id="orders"></canvas>
+                        </div>
+                      </div>
+                      <div
+                        class="col-xl-2 col-12 d-flex flex-column my-auto no-padding text-center"
+                      >
+                        <div class="new-orders">
+                          <div class="title">New Orders</div>
+                          <div class="circle-orders">
+                            <div class="percent-orders"></div>
+                          </div>
+                        </div>
+                        <div class="some-stats mt-5">
+                          <div class="title">Total Delivered</div>
+                          <div class="number text-blue">856</div>
+                        </div>
+                        <div class="some-stats mt-3">
+                          <div class="title">Total Estimated</div>
+                          <div class="number text-blue">297</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!--
+            <div class="row flex-row">
+              <div class="col-xl-4 col-md-6">
+                <div class="widget widget-04 has-shadow">
+                  <div class="widget-header bordered d-flex align-items-center">
+                    <h2>Post</h2>
+                    <div class="widget-options">
+                      <div class="dropdown">
+                        <button
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          class="dropdown-toggle"
+                        >
+                          <i class="la la-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">
+                            <i class="la la-check"></i>Valid Post
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            <i class="la la-edit"></i>Edit Widget
+                          </a>
+                          <a href="faq.html" class="dropdown-item faq">
+                            <i class="la la-question-circle"></i>FAQ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="widget-body p-0">
+                    <div class="post-container">
+                      <div class="media mb-3">
+                        <div class="media-left align-self-center user">
+                          <a href="pages-profile.html"
+                            ><img
+                              src="assets/img/avatar/avatar-07.jpg"
+                              class="rounded-circle"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="media-body align-self-center ml-3">
+                          <div class="title">
+                            <span class="username">Lisa Garett</span> posted an
+                            image
+                          </div>
+                          <div class="time">42 min ago</div>
+                        </div>
+                      </div>
+                      <img
+                        src="assets/img/background/01.jpg"
+                        alt="..."
+                        class="img-fluid"
+                      />
+                      <div
+                        class="col no-padding d-flex justify-content-end mt-3"
+                      >
+                        <div class="meta">
+                          <ul>
+                            <li>
+                              <a href="#"
+                                ><i class="la la-comment"></i
+                                ><span class="numb">38</span></a
+                              >
+                            </li>
+                            <li>
+                              <a href="#"
+                                ><i class="la la-heart"></i
+                                ><span class="numb">94</span></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+-->
+
+<!--
+                    <div class="input-group mt-5">
+              
+                    <div class="chart">
+                      <div class="row no-margin justify-content-center">
+                        <div class="col-12 col-xl-8 col-md-8 col-sm-8">
+                          <div class="row no-margin align-items-center">
+                            <div class="col-9 no-padding">
+                              <div class="chart-graph">
+                                <div class="chart">
+                                  <canvas id="sales-stats"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3 no-padding text-center">
+                              <div class="chart-text">
+                                <span class="heading">Sales</span>
+                                <span class="number">364</span>
+                                <span class="cxg text-green">+35%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="social-stats">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-4 text-center">
+                          <i class="la la-users followers"></i>
+                          <div class="counter">+124</div>
+                          <div class="heading">Followers</div>
+                        </div>
+                        <div class="col-4 text-center">
+                          <i class="la la-dribbble dribbble"></i>
+                          <div class="counter">+357</div>
+                          <div class="heading">Likes</div>
+                        </div>
+                        <div class="col-4 text-center">
+                          <i class="la la-behance behance"></i>
+                          <div class="counter">+98</div>
+                          <div class="heading">Followers</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="actions text-center">
+                      <a href="pages-profile.html" class="btn btn-gradient-01"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+-->
+                       
+<!--
+            </button>
+          </div>
+        </div>
+
+-->
+            </div></div>
+      </div>
+    </div>
+
+    <script
+      src="assets/vendors/js/base/jquery.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/base/core.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+
+    <script
+      src="assets/vendors/js/nicescroll/nicescroll.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/chart/chart.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/progress/circle-progress.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/calendar/moment.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/calendar/fullcalendar.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/owl-carousel/owl.carousel.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+    <script
+      src="assets/vendors/js/app/app.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+
+    <script
+      src="assets/js/dashboard/db-default.min.js"
+      type="cd21e38ad2e7f19e9060b801-text/javascript"
+    ></script>
+
+    <script
+      src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="cd21e38ad2e7f19e9060b801-|49"
+      defer=""
+    ></script>
+  </body>
+</html>
